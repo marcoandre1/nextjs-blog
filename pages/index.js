@@ -1,16 +1,20 @@
+import getConfig from 'next/config'
 import Head from 'next/head'
+
+// Only holds serverRuntimeConfig and publicRuntimeConfig
+const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={`${publicRuntimeConfig.rootFolder}/favicon.ico`} />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Learn <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className="description">
@@ -55,7 +59,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          <img src={`${publicRuntimeConfig.rootFolder}/vercel.svg`} alt="Vercel Logo" className="logo" />
         </a>
       </footer>
 
