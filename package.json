@@ -1,6 +1,8 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
+  "name": "nextjs-blog",
+  "version": "1.0.0",
+  "description": "Next.js blog app ready to deploy to GitHub Pages using gh-pages",
+  "main": "index.js",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,6 +12,21 @@
     "deploy": "gh-pages -d out -t true",
     "prettier": "prettier --write ."
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcoandre1/nextjs-blog.git"
+  },
+  "keywords": [
+    "Next.js",
+    "GitHub Pages",
+    "gh-pages"
+  ],
+  "author": "Marco E (https://modokemdev.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcoandre1/nextjs-blog/issues"
+  },
+  "homepage": "https://github.com/marcoandre1/nextjs-blog#readme",
   "dependencies": {
     "date-fns": "^2.16.1",
     "gray-matter": "^4.0.2",
